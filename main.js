@@ -1,7 +1,8 @@
 var app = new Vue({
     el: '#root',
     data: {
-        circle: ['far', 'fas'],
+        circleFull: 'fas fa-circle',
+        circleEmpty: 'far fa-circle',
         counter: 0,
         images: ['img/img_1.jpg', 'img/img_2.jpg', 'img/img_3.jpg', 'img/img_4.jpg'],
     },
