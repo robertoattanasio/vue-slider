@@ -13,23 +13,22 @@
     <title>VUE Slider</title>
 </head>
 
-<body class="debug">
+<body class="">
 
     <div class="slider">
 
         <div id="root" class="main_wrapper">
-            <div class="arrow_left"><i class="fas fa-chevron-left"></i></div>
+            <div @click="prevImg" class="arrow_left"><i class="fas fa-chevron-left"></i></div>
             <div class="images">
-                <img src="img/img_1.jpg" alt="">
-
+                <img :src="images[counter]" alt="Images">
             </div>
-            <div class="arrow_right"><i class="fas fa-chevron-right"></i></div>
+            <div @click="nextImg" class="arrow_right"><i class="fas fa-chevron-right"></i></div>
         </div>
         <div class="buttons">
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
-            <i class="fas fa-circle"></i>
+            <i class="far fa-circle"></i>
+            <i class="far fa-circle"></i>
+            <i class="far fa-circle"></i>
+            <i class="far fa-circle"></i>
         </div>
     </div>
 
