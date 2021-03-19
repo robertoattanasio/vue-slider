@@ -24,7 +24,8 @@
             <div @click="nextImg" class="arrow_right"><i class="fas fa-chevron-right"></i></div>
         </div>
         <div class="buttons">
-            <i v-for="(circle, index) in images" :class="index == counter ? circleFull : circleEmpty"></i>
+            <i v-for="(element, index) in images" :class="index == counter ? circle[1] : circle[0]"></i>
+
         </div>
     </div>
 
