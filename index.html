@@ -24,7 +24,7 @@
             <div @click="nextImg" class="arrow_right"><i class="fas fa-chevron-right"></i></div>
         </div>
         <div class="buttons">
-            <i v-for="(element, index) in images" :class="index == counter ? circle[1] : circle[0]"></i>
+            <i v-for="(element, indexImg) in images" :class="indexImg == counter ? circle[1] : circle[0]" @click="changeImg(indexImg)"></i>
         </div>
     </div>
 

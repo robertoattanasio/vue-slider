@@ -67,4 +67,10 @@ body {
 .buttons i {
     margin: 0 5px;
     font-size: 20px;
+    transition: 200ms;
+}
+
+.buttons i:hover {
+    cursor: pointer;
+    color: gray;
 }

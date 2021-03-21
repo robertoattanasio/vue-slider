@@ -6,6 +6,12 @@ var app = new Vue({
         images: ['img/img_1.jpg', 'img/img_2.jpg', 'img/img_3.jpg', 'img/img_4.jpg'],
     },
     methods: {
+        changeImg: function(index) {
+            this.counter = index;
+            clearInterval(this.interval);
+            this.startInterval();
+        },
+
         prevImg: function() {
             this.counter--;
             clearInterval(this.interval);
@@ -15,6 +21,7 @@ var app = new Vue({
                 (this.counter = 3);
             };
         },
+
         nextImg: function() {
             this.counter++;
             clearInterval(this.interval);
