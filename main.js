@@ -32,5 +32,13 @@ var app = new Vue({
     },
     created: function() {
         this.startInterval();
-    }
+        document.addEventListener('keyup', (e) => {
+            // console.log(e);
+            if (e.keyCode == 39) {
+                this.nextImg();
+            } else if (e.keyCode == 37) {
+                this.prevImg();
+            }
+        })
+    },
 });
